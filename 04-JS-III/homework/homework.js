@@ -181,6 +181,11 @@ function diaDeLaSemana(numeroDeDia) {
     default:
       return "El valor no está entre 1-7";
   }  
+
+  // if(numeroDeDia === 1 || numeroDeDia === 7 ) {
+  //   return "Es fin de semana"
+  // }
+  // return "Es dia Laboral"
 } 
 
 
@@ -200,12 +205,16 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  for(var i=0; i<arreglo.length; i++)
+  for(var i=0; i<arreglo.length; i++) // No es necesario recorrer todas las posibilidades
     for(var j=0; j<arreglo.length; j++)
       if(arreglo[i] != arreglo[j])
         return false;
 
   return true;
+
+  // for (var i =0 ; i < arreglo.length - 1; i++)
+  //  if(arreglo[i] !== arreglo[i+1])
+  //    return false
 } 
 
 
